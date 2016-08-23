@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app = "myApp">
+<head>
+    <title></title>
+</head>
+<body ng-controller="mainCtrl2">
+    {{greeting}}
+
+<d3-bars data="data" on-click="onClick(item)"></d3-bars>
+
+<div ng-show="showDetailPanel"><h1>Name:{{detailItem.name}}</h1>
+<h3>Score:</h3><h3>{{detailItem.score}}</h3>
+    <a ng-click="showDetailPanel=false">Hide Info</div>    
+</a>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+<script src="appModule.js"></script>
+<script src="services/d3.js"></script>
+<script src="controllers/mainCtrl.js"></script>
+<script src="controllers/mainCtrl2.js"></script>
+<script src="directives/d3bars.js"></script>
+</body>
+</html>
