@@ -8,6 +8,7 @@ directiveModule.directive('d3Bars', ['$window', '$timeout', 'd3Service', functio
       },
       link: function(scope, element, attrs) {
         d3Service.d3().then(function(d3) {
+        console.log(element);
         var margin = parseInt(attrs.margin) || 20,
           barHeight = parseInt(attrs.barHeight) || 20,
           barPadding = parseInt(attrs.barPadding) || 5;
